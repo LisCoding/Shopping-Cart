@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function () {
+
+        $("#img1").hover(function () {
+          $(this).attr("src", "dress2.jpg");
+          }, function() {
+          $(this).attr("src", "dress.jpg");
+        });
+
+        $("#img2").hover(function () {
+          $(this).attr("src", "shoes2.jpg");
+          }, function() {
+          $(this).attr("src", "shoes.jpg");
+        });
+
+        $("#img3").hover(function () {
+          $(this).attr("src", "dress.jpg");
+          }, function() {
+          $(this).attr("src", "jean1.jpeg");
+        });
+
+        $("#img4").hover(function () {
+          $(this).attr("src", "jacket2.jpg");
+          }, function() {
+          $(this).attr("src", "jacket.jpg");
+        });
+
+      });
+    </script>
+  </head>
+  <body>
+    <div class="wrapper">
+      <h1>Shopping Cart</h1>
+      <div class="content">
+        <img id="img1" src="dress.jpg" alt="">
+        <img id="img2" src="shoes.jpg" alt="">
+        <img id="img3" src="jean1.jpeg" alt="">
+        <img id="img4" src="jacket.jpg" alt="">
+      </div>
+    </div>
+  </body>
+</html>
